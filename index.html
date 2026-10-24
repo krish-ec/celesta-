@@ -1,0 +1,329 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>CLESTA — Enter the Night. Become Legend.</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Anton&family=JetBrains+Mono:wght@400;500;700&family=Space+Grotesk:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<div class="grain"></div>
+<div class="vignette"></div>
+
+<div class="ignition" aria-hidden="true">
+  <div class="ignition-line"></div>
+  <div class="ignition-word">CLESTA</div>
+</div>
+
+<!-- NAV -->
+<nav class="nav" id="nav">
+  <a href="#top" class="nav-logo">CLESTA<span>.</span></a>
+  <div class="nav-links">
+    <a href="#manifesto">The Night</a>
+    <a href="#details">Details</a>
+    <a href="#experience">Experience</a>
+    <a href="#codes">Rules</a>
+    <a href="#tickets">Entry</a>
+  </div>
+  <a href="#tickets" class="nav-cta">Get In</a>
+  <button class="nav-burger" id="burgerBtn" aria-label="Open menu">
+    <span></span><span></span><span></span>
+  </button>
+</nav>
+
+<div class="mobile-menu" id="mobileMenu">
+  <button class="mobile-close" id="mobileClose" aria-label="Close menu">✕</button>
+  <a href="#manifesto">The Night</a>
+  <a href="#details">Details</a>
+  <a href="#experience">Experience</a>
+  <a href="#codes">Rules</a>
+  <a href="#tickets">Entry</a>
+</div>
+
+<!-- HERO -->
+<header class="hero" id="top">
+  <div class="hero-blob">
+    <svg viewBox="0 0 500 500" width="100%" height="100%">
+      <defs>
+        <filter id="liquid">
+          <feTurbulence type="fractalNoise" baseFrequency="0.008 0.012" numOctaves="2" seed="7" result="noise">
+            <animate attributeName="baseFrequency" dur="22s" values="0.008 0.012;0.014 0.02;0.008 0.012" repeatCount="indefinite"/>
+          </feTurbulence>
+          <feDisplacementMap in="SourceGraphic" in2="noise" scale="70"/>
+        </filter>
+        <radialGradient id="chromeGrad" cx="35%" cy="30%" r="75%">
+          <stop offset="0%" stop-color="#F4F4F4"/>
+          <stop offset="35%" stop-color="#9A9A9A"/>
+          <stop offset="60%" stop-color="#B10000"/>
+          <stop offset="100%" stop-color="#0D0D0D"/>
+        </radialGradient>
+      </defs>
+      <circle cx="250" cy="250" r="180" fill="url(#chromeGrad)" filter="url(#liquid)" opacity="0.9"/>
+    </svg>
+  </div>
+  <div class="hero-particles" id="particles"></div>
+
+  <div class="hero-inner wrap">
+    <div class="eyebrow">Digiquest Academy Presents</div>
+    <h1 class="hero-title">ENTE<span class="glitch-r">R</span> THE<br>NIGHT.</h1>
+    <p class="hero-sub">One night. One arena. <b>Zero rules</b> but the ones that keep the legend alive. CLESTA is the freshers' initiation Digiquest Academy has been building toward all year.</p>
+    <p class="hero-meta">// EDITION 01 &nbsp;·&nbsp; PLACEHOLDER VENUE, YOUR CITY &nbsp;·&nbsp; DOORS 7:00 PM</p>
+
+    <div class="hero-actions">
+      <a href="#tickets" class="btn-primary">Claim Your Entry</a>
+      <a href="#manifesto" class="btn-ghost">↓ What is Clesta</a>
+    </div>
+
+    <div class="countdown" id="countdown" aria-label="Countdown to event">
+      <div class="count-box"><div class="count-num" id="cd-days">00</div><div class="count-label">Days</div></div>
+      <div class="count-box"><div class="count-num" id="cd-hours">00</div><div class="count-label">Hrs</div></div>
+      <div class="count-box"><div class="count-num" id="cd-mins">00</div><div class="count-label">Min</div></div>
+      <div class="count-box"><div class="count-num" id="cd-secs">00</div><div class="count-label">Sec</div></div>
+    </div>
+  </div>
+
+  <div class="scroll-cue">
+    <div class="scroll-line"></div>
+    <span>SCROLL</span>
+  </div>
+</header>
+
+<!-- MANIFESTO -->
+<section class="manifesto" id="manifesto">
+  <div class="wrap">
+    <div class="manifesto-grid">
+      <div class="manifesto-visual reveal">
+        <div class="chrome-orb"></div>
+      </div>
+      <div class="manifesto-text reveal">
+        <div class="sec-eyebrow">The Concept</div>
+        <h2 class="sec-title" style="margin-bottom:28px;">Not a party.<br>An <em>initiation</em>.</h2>
+        <p>Every freshers' night promises unforgettable. CLESTA is built to actually be it — <b>a cinematic, sensory-first experience</b> designed the way a festival campaign is designed, not a college function.</p>
+        <p>Think liquid chrome light rigs, a soundsystem that hits like a pulse, and a crowd of people who all just became something new. You don't attend CLESTA. <b>You become part of it.</b></p>
+        <div class="manifesto-org">Organized by <b>DIGIQUEST ACADEMY</b> — presented as the official welcome for the incoming batch.</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- MISSION DETAILS -->
+<section class="details" id="details">
+  <div class="wrap">
+    <div class="reveal">
+      <div class="sec-eyebrow">Mission Details</div>
+      <h2 class="sec-title">Coordinates for<br>the night ahead.</h2>
+    </div>
+    <div class="details-grid reveal">
+      <div class="detail-cell">
+        <div class="detail-tag">Date</div>
+        <div class="detail-value">TBA · 2026</div>
+        <div class="detail-sub">Placeholder — final date announced soon</div>
+      </div>
+      <div class="detail-cell">
+        <div class="detail-tag">Venue</div>
+        <div class="detail-value">Venue Name</div>
+        <div class="detail-sub">Placeholder location, your city</div>
+      </div>
+      <div class="detail-cell">
+        <div class="detail-tag">Time</div>
+        <div class="detail-value">7:00 PM</div>
+        <div class="detail-sub">Doors close 9:00 PM sharp</div>
+      </div>
+      <div class="detail-cell">
+        <div class="detail-tag">Dress Code</div>
+        <div class="detail-value">Black &amp; Chrome</div>
+        <div class="detail-sub">Come dressed like you mean it</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- EXPERIENCE -->
+<section class="experience" id="experience">
+  <div class="wrap">
+    <div class="reveal">
+      <div class="sec-eyebrow">Inside The Arena</div>
+      <h2 class="sec-title">Six ways the<br>night gets you.</h2>
+    </div>
+    <div class="exp-grid reveal">
+      <div class="exp-card">
+        <div class="exp-icon">DJ</div>
+        <div><div class="exp-name">Main Floor</div><p class="exp-desc">A DJ set built to escalate — from first drop to last dance, no dead air.</p></div>
+      </div>
+      <div class="exp-card">
+        <div class="exp-icon">✦</div>
+        <div><div class="exp-name">Live Acts</div><p class="exp-desc">Surprise performances woven through the night. You won't see the lineup coming.</p></div>
+      </div>
+      <div class="exp-card">
+        <div class="exp-icon">◈</div>
+        <div><div class="exp-name">Neon Arena</div><p class="exp-desc">A light and haze rig designed like a festival stage, not a decorated hall.</p></div>
+      </div>
+      <div class="exp-card">
+        <div class="exp-icon">📷</div>
+        <div><div class="exp-name">Chrome Booth</div><p class="exp-desc">A cinematic photo moment worth posting — mirrored, moody, unmistakable.</p></div>
+      </div>
+      <div class="exp-card">
+        <div class="exp-icon">✧</div>
+        <div><div class="exp-name">Crew Games</div><p class="exp-desc">Batch-vs-batch challenges on the floor. Bragging rights included.</p></div>
+      </div>
+      <div class="exp-card">
+        <div class="exp-icon">?</div>
+        <div><div class="exp-name">The Drop</div><p class="exp-desc">One surprise we're not revealing. That's the point of a legend.</p></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- CODES OF ENTRY -->
+<section class="codes" id="codes">
+  <div class="wrap">
+    <div class="reveal">
+      <div class="sec-eyebrow">Codes of Entry</div>
+      <h2 class="sec-title">Read before<br>you cross the door.</h2>
+    </div>
+    <div class="codes-list reveal">
+      <div class="code-row">
+        <div class="code-mark">I.</div>
+        <div class="code-body">
+          <h4>Your college ID is your key</h4>
+          <p>Valid student ID required at the gate — no ID, no entry, no exceptions. Carry a government ID as backup.</p>
+        </div>
+      </div>
+      <div class="code-row">
+        <div class="code-mark">II.</div>
+        <div class="code-body">
+          <h4>Tickets are non-transferable</h4>
+          <p>Your entry pass is registered to your name. Screenshots and forwarded passes won't scan at the door.</p>
+        </div>
+      </div>
+      <div class="code-row">
+        <div class="code-mark">III.</div>
+        <div class="code-body">
+          <h4>Dress in the theme, not against it</h4>
+          <p>Black and chrome sets the tone. Come as your most cinematic self — this isn't a uniform, it's a mood.</p>
+        </div>
+      </div>
+      <div class="code-row">
+        <div class="code-mark">IV.</div>
+        <div class="code-body">
+          <h4>Respect the floor</h4>
+          <p>Zero tolerance for harassment of any kind. Security and organizers reserve the right to remove anyone who breaks this.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- TICKETS -->
+<section class="tickets" id="tickets">
+  <div class="wrap">
+    <div class="reveal">
+      <div class="sec-eyebrow">Secure Your Spot</div>
+      <h2 class="sec-title">Entry is limited.<br>Legends aren't.</h2>
+    </div>
+    <div class="tick-grid reveal">
+      <div class="tick-card">
+        <div class="tick-name">Standard</div>
+        <div class="tick-price">₹XXX</div>
+        <p class="tick-desc">Full access to the main floor and the entire night.</p>
+        <ul class="tick-feats">
+          <li>General floor access</li>
+          <li>Entry from 7 PM</li>
+          <li>Standard queue</li>
+        </ul>
+        <a href="#" class="tick-btn">Get Standard</a>
+      </div>
+      <div class="tick-card featured">
+        <div class="tick-featured-tag">Most Chosen</div>
+        <div class="tick-name">VIP</div>
+        <div class="tick-price">₹XXX <span>/ head</span></div>
+        <p class="tick-desc">Priority access with a better vantage point on the floor.</p>
+        <ul class="tick-feats">
+          <li>Priority fast-lane entry</li>
+          <li>Reserved viewing zone</li>
+          <li>Complimentary welcome drink</li>
+          <li>VIP wristband</li>
+        </ul>
+        <a href="#" class="tick-btn">Get VIP</a>
+      </div>
+      <div class="tick-card">
+        <div class="tick-name">Legend</div>
+        <div class="tick-price">₹XXX</div>
+        <p class="tick-desc">The full CLESTA experience, front and center.</p>
+        <ul class="tick-feats">
+          <li>Everything in VIP</li>
+          <li>Front-row floor access</li>
+          <li>Meet the performers</li>
+          <li>Limited-edition merch</li>
+        </ul>
+        <a href="#" class="tick-btn">Get Legend</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- FAQ -->
+<section class="faq" id="faq">
+  <div class="wrap">
+    <div class="reveal">
+      <div class="sec-eyebrow">Before You Ask</div>
+      <h2 class="sec-title">Quick answers.</h2>
+    </div>
+    <div class="faq-list reveal">
+      <div class="faq-item">
+        <button class="faq-q">Who can attend CLESTA? <span class="faq-q-mark">+</span></button>
+        <div class="faq-a">CLESTA is open to all incoming freshers of the batch, organized by Digiquest Academy. Valid student ID is mandatory at entry.</div>
+      </div>
+      <div class="faq-item">
+        <button class="faq-q">Is outside food or drink allowed? <span class="faq-q-mark">+</span></button>
+        <div class="faq-a">No outside food, drinks, or beverages are permitted inside the venue. Refreshments will be available on-site.</div>
+      </div>
+      <div class="faq-item">
+        <button class="faq-q">Can I get a refund on my ticket? <span class="faq-q-mark">+</span></button>
+        <div class="faq-a">All ticket sales are final and non-refundable once purchased, though passes can be reissued for name corrections before the event.</div>
+      </div>
+      <div class="faq-item">
+        <button class="faq-q">What time should I arrive? <span class="faq-q-mark">+</span></button>
+        <div class="faq-a">Doors open at 7:00 PM and close at 9:00 PM sharp. Arriving early avoids the queue and gets you the best spot on the floor.</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- FINAL CTA -->
+<section class="final-cta">
+  <div class="eyebrow" style="justify-content:center;">Last Call</div>
+  <h2 class="final-title">DON'T WATCH<br>THE <span>LEGEND</span>.<br>BE IT.</h2>
+  <p class="final-sub">Entry is limited. The night doesn't wait for latecomers.</p>
+  <a href="#tickets" class="btn-primary">Claim Your Entry</a>
+</section>
+
+<!-- FOOTER -->
+<footer>
+  <div class="wrap">
+    <div class="foot-grid">
+      <div>
+        <div class="foot-logo">CLESTA<span>.</span></div>
+        <div class="foot-org">An event by DIGIQUEST ACADEMY</div>
+      </div>
+      <div class="foot-links">
+        <a href="#">Instagram</a>
+        <a href="#">WhatsApp</a>
+        <a href="#">Contact</a>
+      </div>
+    </div>
+    <div class="foot-bottom">
+      <span>© 2026 DIGIQUEST ACADEMY — CLESTA</span>
+      <span>ALL DETAILS PLACEHOLDER · FINAL INFO COMING SOON</span>
+    </div>
+  </div>
+</footer>
+
+<script src="script.js" defer></script>
+
+</body>
+</html>
